@@ -1,0 +1,229 @@
+/* Sistema de Exámenes - Estilos Administración */
+
+/* Estilos generales */
+.se-shortcode-info {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.se-shortcode-info h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.se-shortcode-info code {
+    background: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+/* Welcome panel */
+.welcome-panel {
+    background: white;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin: 20px 0;
+}
+
+.welcome-panel-content {
+    padding: 20px;
+}
+
+.welcome-panel-column-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.welcome-panel-column {
+    flex: 1;
+}
+
+.welcome-panel-column h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.welcome-panel-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.welcome-panel-column li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.welcome-panel-column li:last-child {
+    border-bottom: none;
+}
+
+.welcome-panel-column strong {
+    color: #0073aa;
+    font-weight: 600;
+}
+
+/* Formularios */
+.form-table th {
+    width: 200px;
+    font-weight: 600;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+.form-table input[type="text"],
+.form-table textarea,
+.form-table select {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-table textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Botones */
+.button {
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+}
+
+.button-primary {
+    background: #0073aa;
+    border-color: #0073aa;
+}
+
+.button-primary:hover {
+    background: #005a87;
+    border-color: #005a87;
+}
+
+/* Tablas */
+.wp-list-table {
+    margin-top: 20px;
+}
+
+.wp-list-table th {
+    font-weight: 600;
+}
+
+.wp-list-table td {
+    vertical-align: middle;
+}
+
+.tablenav {
+    margin: 20px 0;
+}
+
+.tablenav .actions {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .welcome-panel-column-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .form-table th {
+        width: 150px;
+    }
+    
+    .tablenav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .tablenav .alignleft,
+    .tablenav .alignright {
+        text-align: left;
+    }
+}
+
+/* Mejoras visuales */
+.wrap h1 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estados de los elementos */
+.status-active {
+    color: #46b450;
+    font-weight: 600;
+}
+
+.status-inactive {
+    color: #dc3232;
+    font-weight: 600;
+}
+
+/* Tooltips */
+.help-tip {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #0073aa;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    cursor: help;
+    margin-left: 5px;
+}
+
+/* Validación de formularios */
+.form-required {
+    color: #dc3232;
+}
+
+.form-table .form-invalid input,
+.form-table .form-invalid textarea,
+.form-table .form-invalid select {
+    border-color: #dc3232;
+}
+
+.form-table .form-invalid label {
+    color: #dc3232;
+}
+
+/* Mensajes de éxito/error */
+.notice {
+    margin: 20px 0;
+    padding: 12px;
+    border-left: 4px solid;
+    background: white;
+}
+
+.notice-success {
+    border-left-color: #46b450;
+}
+
+.notice-error {
+    border-left-color: #dc3232;
+}
+
+.notice-warning {
+    border-left-color: #ffb900;
+}
+
+.notice-info {
+    border-left-color: #00a0d2;
+}
